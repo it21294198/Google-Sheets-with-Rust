@@ -44,7 +44,7 @@
     ```
     1AbCDefGHIJKLmnoPQRstuVWxyz
     ```
-    Add Spreadsheet ID to `.env`.
+    Add Spreadsheet ID to `.env` on root folder.
    ```
    SPREADSHEET_ID = 
    ```
@@ -57,6 +57,14 @@
     * Read Program
     ```
     cargo run -p read
+    ```
+    * Query a text
+    ```
+    cargo run -p query
+    ```
+    * Update a text
+    ```
+    cargo run -p update
     ```
 
 If everything is correct → your data appears in Google Sheets.
