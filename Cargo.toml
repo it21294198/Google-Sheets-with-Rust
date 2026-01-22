@@ -1,0 +1,16 @@
+[package]
+name = "test-db"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = ["write", "read"]
+
+[dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+jsonwebtoken = "9"
+chrono = "0.4"
+dotenv = "0.15.0"
